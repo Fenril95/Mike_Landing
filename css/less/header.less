@@ -1,0 +1,160 @@
+@import url(../styles/vars.less);
+@import url(../styles/mixins.less);
+
+//-------------------------------------------------header-------------------
+#carousel {
+	position: relative;
+	.logo-container {
+		color: #fff;
+	    padding-top: 100px;
+	    position: absolute;
+	    text-transform: uppercase;
+	    z-index: 999999;
+		a {
+			.fa.fa-apple {
+				color: #fff;
+				left: 14px;
+				position: absolute;
+			    top: 113px;
+			}
+		}
+		h3 {
+			font: 16px @eBold;
+			position: absolute;
+    		left: 44px;
+    		top: 77px;
+    		&:after {
+    			border-top: 4.5px solid transparent;
+			    border-right: 5px solid #196fc0;
+			    border-bottom: 4.5px solid transparent;
+			    bottom: 6px;
+				content: '';
+				font-size: 0px;
+				height: 0;
+				left: 4px;
+			    position: relative;
+			    width: 0;
+			}
+		}
+		p {
+			font: 13px @varela;
+			left: 44px;
+			position: absolute;
+    		top: 122px;
+    		width: 111px;
+		}
+	}
+	.container {
+		margin-top: 264px;
+		.clearfix;
+		color: #fff;
+		max-width: 100%;
+		position: absolute;
+		text-align: center;
+		text-transform: uppercase;
+		z-index: 99;
+		h1 {
+			font: 40px @bold;
+		}
+		h2 {
+			border-bottom: 1px solid #fff;
+			display: inline-block;
+			font: 18px @light;
+			margin: 0;
+		}
+		a {
+			color: #fff;
+			font: 20px @varela;
+			position: relative;
+			transition: all 0.5s;
+			text-decoration: none;
+			img {
+				padding-top: 30px;
+			}
+			span {
+				left: 43%;
+				position: absolute;
+				top: 60%;
+				z-index: 99999;
+			}
+		}
+		.linel {
+			background-color: #fff;
+		    position: absolute;
+		    height: 2px;
+		    left: 527px;
+		    top: 440px;
+		    width: 10px;
+		}
+		.liner {
+			.linel;
+			left: 634px;
+		}
+		h4 {
+			font: 30px @varela;
+			padding-top: 10px;
+			text-transform: none;
+		}
+		p {
+			font: 14px @varela;
+			letter-spacing: 1px;
+    		padding: 30px 162px 0;
+    		word-spacing: -1px;
+		}
+	}
+}
+
+.carousel-inner .item {
+	background: #000000 url(../img/sld-main.jpeg) no-repeat center bottom;
+	background-size: cover; 
+	height: 900px;
+	width: 100%;
+}
+//-----------------------------------------------------------------------------
+
+// ------------------------------------------MENU-------------------------------
+.navbar.navbar-default {
+	background-color: #196fc0;
+	border: none;
+	border-radius: 0;
+	margin-bottom: 0;
+	width: 100%;
+	.navbar-header {
+		.navbar-brand {
+			display: inline-block;
+			color: #fff;
+			font: 26px @eBold;
+			padding-bottom: 50px;
+			&:after {
+				border-top: 4.5px solid transparent;
+			    border-right: 5px solid #fff;
+			    border-bottom: 4.5px solid transparent;
+			    bottom: 9px;
+				content: '';
+				font-size: 0px;
+				height: 0;
+				left: 4px;
+			    position: relative; 
+			    width: 0;
+			}
+		}
+	}
+	.collapse.navbar-collapse {
+		.nav.navbar-nav.navbar-right {
+			li {
+				a {
+					border-bottom: 3px solid #196fc0;
+					color: #fff;
+					font: 13px @sBold;
+					padding: 24px 11px 21px 11px;
+					text-transform: uppercase;
+					transition: all 0.3s;
+					&:hover {
+						border-bottom: 3px solid #fff;
+						transition: all 0.3s;
+					}
+				}
+			}
+		}
+	}
+}

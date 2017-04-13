@@ -1,0 +1,165 @@
+@import url(../styles/vars.less);
+@import url(../styles/mixins.less);
+
+// ------------------------------------------------TEAM SECTION-----------------------------
+#team-section {
+	padding-bottom: 100px;
+	.team-text {
+		margin-top: 70px;
+		.div-heading;
+		margin-bottom: 70px;
+	}
+	.container-full {
+		.row {
+			margin-right: 0;
+			margin-left: 0;
+			.team-card {
+				position: relative;
+				transition: all 0.6s;
+				z-index: 9999;
+				// ALL HOVER OPTIONS
+				&:hover {
+					background-color: #196fc0;
+					transition: all 0.6s;
+					.card-hov {
+						position: absolute;
+					    color: #fff;
+					    display: block;
+					    height: 100%;
+					    text-align: center;
+					    top: 0;
+					    width: 100%;
+					    h3 {
+							font: 16px @sBold;
+							letter-spacing: -1px;
+					    	margin-bottom: 0;
+					    	margin-top: 50px;
+					    	text-transform: uppercase;
+					    }
+					    h5 {
+							font: 12px @varela;
+							margin-bottom: 0;
+							text-transform: uppercase;
+					    	margin-top: 4px;
+					    }
+					    .team-line {
+							background-color: #fff;
+							display: inline-block;
+							height: 1px;
+							margin: 26px 0;
+							width: 30px;
+					    }
+					    p {
+						    font: 13px/18px @light;
+						    overflow-y: hidden;
+						    padding: 0 20px;
+					    	height: 56px;
+					    }
+					    // LINKS
+					    .social {
+							margin-top: 50px;
+							width: 100%;
+							.fb {
+								border: 3px solid #fff;
+								display: inline-block;
+								height: 34px;
+								margin-right: 9px;
+								position: relative;
+								transition: all 0.3s;
+								width: 34px;
+								&:last-child {
+									margin-right: 0;
+								}
+								a {
+									color: #fff;
+									font-size: 20px;
+									.fa.fa-facebook {
+										position: absolute;
+										top: 5px;
+	    								right: 10px;
+									}
+	    							.fa.fa-twitter {
+	    								position: absolute;
+	    								top: 4px;
+	    								right: 5px;
+	    							}
+	    							.fa.fa-linkedin {
+	    								position: absolute;
+	    								top: 4px;
+	    								right: 6px;
+	    							}
+	    							.fa.fa-globe {
+	    								position: absolute;
+	    								top: 4px;
+	    								right: 6px;
+	    							}
+								}
+								// LINKS HOVER OPTIONS
+							&:hover {
+								background-color: #fff;
+								transition: all 0.3s;
+								a {
+									color: #196fc0;
+								}
+							}
+							}
+							.tw {
+								.fb;
+							}
+							.li {
+								.fb;
+							}
+							.gl {
+								.fb;
+							}
+					    }
+					}
+					.team-img {
+						border: none;
+						img {
+							height: 100%;
+							visibility: hidden;
+							width: 100%;
+						}
+					}
+					.team-descr {
+						border-left: none;
+						border-right: none;
+						h4 {
+							visibility: hidden;
+						}
+					}
+				}
+				.card-hov {
+					display: none;
+				}
+				.team-img {
+					border: 4px solid #ccc;
+					h3 {
+						display: none;
+					}
+					img {
+						height: auto;
+						position: relative;
+						width: 100%;
+					}
+				}
+				.team-descr {
+					border-bottom: 1px solid #ccc;
+					border-left: 1px solid #ccc;
+					border-right: 1px solid #ccc;
+					padding: 24px 0 20px;
+					width: 100%;
+					h4 {
+						font: 15px @sBold;
+						text-align: center;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// -------------------------------------------------------------------------------------------

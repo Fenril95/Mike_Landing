@@ -1,0 +1,214 @@
+@import url(../styles/vars.less);
+@import url(../styles/mixins.less);
+
+//-----------------------------------SERVICES MAIN------------------------------
+#services-main {
+	background-color: #eee;
+	padding-top: 70px;
+	width: 100%;
+	#exTab1.container-menu {
+		.nav.nav-pills {
+			border-bottom: 3px solid #196fc0;
+			margin-bottom: 70px;
+			width: 100%;
+			li {
+				margin-left: 0;
+				position: relative;
+				text-align: center;
+				width: 20%;
+				&:first-child,
+				&:nth-child(3),
+				&:last-child {
+					background-color: #fff;
+				}
+				&:nth-child(2),
+				&:nth-child(4) {
+					background-color: #fbfbfb;
+				}
+				.icon {
+					background-color: #fff;
+					border: 2px solid #ebebeb;
+					display: inline-block;
+					height: 66px;
+					line-height: 68px;
+    				left: 36%;
+					position: absolute;
+					top: 22px;
+					transition: all 0.2s;
+					width: 66px;
+					z-index: 99999999;
+					i {
+						font-size: 24px;
+					}
+				}
+				a {
+					border-radius: 0;
+					color: #000;
+					display: flex;
+					font: 14px @sBold;
+					height: 162px;
+   					justify-content: center;
+					margin: 0;
+					text-align: center;
+					text-transform: uppercase;
+					transition: all 0.5s;
+					width: 100%;
+					&:hover {
+						background-color: none;
+						transition: all 0.5s;
+					}
+					span {
+    					align-self: flex-end;
+    					margin-bottom: 10px;
+					}
+				}
+			}
+			li.active {
+				.icon {
+					background-color: #fff;
+					border: none;
+					height: 90px;
+					line-height: 105px;
+				    left: 30%;
+				    position: absolute;
+					transition: all 0.2s;
+				    top: 35px;
+					width: 90px;
+					i {
+						color: #196fc0;
+						font-size: 40px;
+					}
+				}
+				&:after {
+				content:'';
+			    border-left: solid 19px transparent;
+			    border-right: solid 19px transparent;
+			    border-top: solid 15px #196fc0;
+			    height: 0;
+			    left: 0;
+			    margin: 0 auto;
+			    position: absolute;
+			    right: 0;
+			    top: 101%;
+			    width: 0;
+				}
+				a {
+					background-color: #196fc0;
+					span {
+						display: none;
+					}
+				}
+			}
+		}
+		.tab-content {
+			.row {
+				margin: 0;
+				.left {
+					h3 {
+						font: 28px @normal;
+						margin-top: 26px;
+	   					margin-bottom: 16px;
+						text-transform: uppercase;
+					}
+					p {
+						font: 13px @light;
+					}
+					.tab-line {
+						background-color: #999;
+						height: 1px;
+						margin: 40px 0 20px;
+						width: 50px;
+					}
+					a {
+						color: #196fc0;
+						font: 11px @varela;
+						text-decoration: none;
+						text-transform: uppercase;
+						&:hover {
+							color: #999;
+						}
+					}
+				}
+				.right {
+					img {
+						height: auto;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+//------------------------------------------------------------------------------
+
+// ----------------------------------SERVICES REVIEW--------------------------------
+.container {
+	.service-text {
+		margin-top: 100px;
+		.div-heading;
+	}
+}
+
+#services-reviews {
+	background-color: #196fc0;
+	padding: 60px 0;
+	position: relative;
+	#main-slider-wrap {
+		color: #fff;
+		height: 300px;
+		list-style-type: none;
+		position: relative;
+		text-align: center;
+		#left-arr,
+		#right-arr {
+			border: 1px solid #fff;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 30px;
+			height: 34px;
+   			line-height: 30px;
+			position: absolute;
+			top: 47%;
+			width: 34px;
+			z-index: 9999;
+
+		}
+		#left-arr {
+			left: 25px;
+		}
+		#right-arr {
+			right: 25px;
+		}
+		.inner-slide-elem {
+			height: 100%;
+			left: 0px;
+			opacity: 0;
+			padding: 0 100px;
+			position: absolute;
+			top: 0px;
+			transition: opacity 1s;
+			width: 100%;
+			z-index: 1;
+			p {
+				margin: 30px 0;
+			}
+			.sld-line {
+				border: 1px solid #fff;
+				display: inline-block;
+				margin-bottom: 25px;
+				width: 50px;
+			}
+			h3 {
+				margin: 0;
+			}
+		}
+		.showing {
+			opacity: 1;
+			z-index: 2;
+		}
+	}
+}
+
+
+// --------------------------------------------------------------------------------

@@ -1,0 +1,109 @@
+@import url(../styles/vars.less);
+@import url(../styles/mixins.less);
+
+// ---------------------------------------------ICONS SECTION---------------------------------------
+#icons {
+	background-color: #196fc0;
+	border-bottom: 5px solid #000;
+	.icons {
+		display: flex;
+		padding: 32px 0 30px;
+   		justify-content: center;
+    	flex-wrap: wrap;
+		div {
+			cursor: pointer;
+			&:hover {
+				background-color: #fff;
+				transition: all 0.5s;
+				i {
+					color: #196fc0;
+				}
+			}
+			border: 2px solid #69a1d6;
+			display: inline-block;
+			display: inline-block;
+			height: 64px;
+			line-height: 70px;
+			margin-right: 22px;
+			text-align: center;
+			transform: rotate(45deg);
+			transition: all 0.5s;
+			width: 64px;
+			a {
+				padding: 19px;
+				i {
+					color: #fff;
+					font-size: 26px;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+}
+
+//--------------------------------------------------------------------------------------------------
+
+// -------------------------------------------------------------FOOTER------------------------------
+footer {
+	text-align: center;
+	.container {
+		width: 100%;
+		.duplicate-menu {
+			padding: 60px 0;
+			text-align: center;
+			width: 100%;
+			li {
+				display: inline;
+				a {
+					color: #666;
+					display: inline-block;
+					padding: 10px 12px;
+					text-decoration: none;
+					text-transform: uppercase;
+					transition: all 0.4s;
+					&:hover {
+						color: #196fc0;
+						transition: all 0.4s;
+					}
+				}
+			}
+		}	
+	}
+	.footer-line {
+		background-color: #ddd;		
+		height: 1px;
+		position: relative;
+		text-align: center;
+		width: 100%;
+		span {
+			background-color: #000;
+			cursor: pointer;
+			display: inline-block;
+			height: 40px;
+			line-height: 66px;
+			position: absolute;
+			top: -19px;
+			transition: all 0.3s;
+			width: 40px;
+			.fa.fa-angle-double-up {
+				color: #fff;
+				font-size: 38px;
+				margin-left: 10px;
+			}
+			&:hover {
+				top: -30px;
+				transition: all 0.3s;
+			}
+		}
+	}
+	.copyright {
+		text-align: center;
+		p {
+			font: 13px @varela;
+			margin-bottom: 140px;
+			margin-top: 54px;
+		}
+	}
+}
+
+//--------------------------------------------------------------------------------------------------

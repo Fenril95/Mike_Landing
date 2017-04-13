@@ -1,0 +1,29 @@
+[
+	{
+		"name":"adam henry",
+		"position":"lead front-end",
+		"bio":"Curabitur nulla odio bibendum sit amet facilisis sed lobortis id, just Donec ollicitudin facil isis nulla. Donec eget  ligula. Cum sociis natoque penatibus magnisn part ",
+		"image":"img/team-man1.jpg"
+	},
+
+	{
+		"name":"diana johnson",
+		"position":"designer",
+		"bio":"Curabitur nulla odio bibendum sit amet facilisis sed lobortis id, just Donec ollicitudin facil isis nulla. Donec eget ligula. Cum sociis natoque penatibus magnisn part ",
+		"image":"img/team-man2.jpg"
+	},
+
+	{
+		"name":"robert doe",
+		"position":"team lead",
+		"bio":"Curabitur nulla odio bibendum sit amet facilisis sed lobortis id, just Donec ollicitudin facil isis nulla. Donec eget ligula. Cum sociis natoque penatibus magnisn part ",
+		"image":"img/team-man3.jpg"
+	},
+
+	{
+		"name":"julia brown",
+		"position":"art director",
+		"bio":"Curabitur nulla odio bibendum sit amet facilisis sed lobortis id, just Donec ollicitudin facil isis nulla. Donec eget ligula. Cum sociis natoque penatibus magnisn part ",
+		"image":"img/team-man4.jpg"
+	}
+]

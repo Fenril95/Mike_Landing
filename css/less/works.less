@@ -1,0 +1,264 @@
+@import url(../styles/vars.less);
+@import url(../styles/mixins.less);
+
+// ----------------------------------------------CLEAN DESIGN SECTION--------------------------------
+#design-section {
+	background: #fff url(../img/almost-paralax.png) no-repeat center center;
+	background-size: cover;
+	height: 390px;
+	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+	    border-left: solid 30px transparent;
+	    border-right: solid 30px transparent;
+	    border-top: solid 20px #4187c7;
+	    height: 0;
+	    left: 0;
+	    margin: 0 auto;
+		top: 100%;
+	    right: 0;
+	    width: 0;
+
+	}
+	.design-text {
+		color: #fff;
+		padding: 96px 0;
+		text-align: center;
+		text-transform: uppercase;
+		h3 {
+			font: 54px/10px @bold;
+		}
+		h4 {
+			font: 30px/30px @sBold;
+			margin-top: 50px;
+		}
+	}
+	.design-buttons {
+		display: flex;
+		justify-content: center;
+		margin-top: 30px;
+		width: 100%;
+		.get-button {
+			border: 1px solid #ddd;
+			height: 48px;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-top: 60px;
+			transition: all 0.4s;
+			width: 168px;
+			a {
+				color: #000;
+				display: inline-block;
+				height: 100%;
+				margin-bottom: 100px;
+				padding-top: 14px;
+				text-align: center;
+				text-transform: uppercase;
+				vertical-align: middle;
+				width: 100%;
+				&:hover {
+				background-color: #196fc0;
+				border: none;
+				color: #fff;
+				text-decoration: none;
+				transition: all 0.4s;
+				}
+			}
+		}
+	}
+}
+// --------------------------------------------------------------------------------------------------
+
+// ------------------------------RECENT WORKS SECTION----------------------------------------------------
+#works {
+	padding-top: 100px;
+	.works-text {
+		margin-top: 100px;
+		.div-heading;
+	}
+	#exTab2 {
+		.nav.nav-pills {
+			border-bottom: 3px solid #196fc0;
+			border-left: 1px solid #eee;
+			border-right: 1px solid #eee;
+			border-top: 1px solid #eee;
+			margin-bottom: 40px;
+			width: 100%;
+			li {
+				margin-left: 0;
+				a {
+					border-radius: 0;
+					color: #000;
+					font: 11px @varela;
+					padding: 16px 20px;
+					text-transform: uppercase;
+					transition: all 0.5s;
+				}
+			}
+			li.active {
+				&:after {
+				content:'';
+			    border-left: solid 9px transparent;
+			    border-right: solid 9px transparent;
+			    border-top: solid 6px #196fc0;
+			    height: 0;
+			    left: 0;
+			    margin: 0 auto;
+			    position: absolute;
+			    right: 0;
+			    top: 106%;
+			    width: 0;
+				}
+				a {
+					background-color: #196fc0;
+				}
+			}
+			.btn-group {
+				float: right;
+				button.btn.btn-default.dropdown-toggle {
+					border-radius: 0;
+					height: 46px;
+					background-color: #fff;
+					border: none;
+					text-transform: uppercase;
+					border-left: 1px solid #eee;
+					font: 11px @varela;
+					padding: 0 22px 0 20px;
+					span {
+						color: #196fc0;
+						font-size: 13px;
+						margin-left: 10px;
+					}
+				}
+				.dropdown-menu {
+					left: -42%;
+					margin: 3px 0 0;
+					position: absolute;
+				}
+			}
+		}
+		.tab-content {
+			margin-bottom: 100px;
+			.tab-pane {
+				background-color: #eee;
+				a {
+					color: #000;
+					cursor: default;
+					display: inline-block;
+					float: left;
+					position: relative;
+					text-transform: uppercase;
+					width: 25%;
+					img {						
+						height: auto;
+						width: 100%;
+					}
+					.gal-hov {
+						display: none;
+						left: 0;
+						position: absolute;
+						top: 0;
+						z-index: 999999;
+					}
+					.gal-text {
+						display: none;
+						position: absolute;
+						z-index: 999999;
+					}
+					&:hover {	
+						.gal-hov {
+							background-color: rgba(69, 138, 203, 0.9);
+							display: block;
+							height: 80%;
+							width: 100%;
+							.diamond-icon {
+								background-color: #fff;
+								display: inline-block;
+								margin: 16% 0 0 36%; 
+								width: 60px;
+							    border: 2px solid #eee;
+							    height: 60px;
+							    line-height: 66px;
+							    text-align: center;
+							    transform: rotate(45deg);
+								box-shadow: 6px 6px 0px -2px rgba(238,238,238,0.7);
+								.fa.fa-plus-square-o {
+									font-size: 24px;
+									transform: rotate(-45deg);
+									
+								}
+							}
+						}
+						.gal-text {
+							background-color: #fff;
+							bottom: 0;
+							display: block;
+							height: 30%;
+							left: 0;
+							text-align: center;
+							width: 100%;
+							h3 {
+								font: 16px @sBold;
+								margin-bottom: 10px;
+								margin-top: 20px;
+							}
+							p {
+								color: #bbb;
+								font: 12px @varela;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// -------------------------------------------------------------------------------------------------------
+
+// ----------------------------------------------PARALAX SECTION II---------------------------------------
+#paralax2 {
+	background: #000 url(../img/paralax1.jpeg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	max-width: 100%;
+	.container {
+		color: #fff;
+		max-width: 100%;
+		padding: 150px 0 150px;
+		text-align: center;
+		h3 {
+			font: 36px @sBold;
+			margin-bottom: 4px;
+			text-transform: capitalize;
+		}
+		p {
+			font: 20px @light;
+			padding: 0 0 84px;
+		}
+		.btn-blue { 
+			display: inline;
+			a {
+				background-color: none;
+				border: 1px solid #f0f0f0;
+				color: #fff;
+				display: inline-block;
+				font: 13px @varela;
+				padding: 18px 24px;
+				text-decoration: none;
+				text-transform: uppercase;
+				transition: all 0.4s;
+				&:hover {
+					background-color: #185fa3;
+					transition: 0.4s;
+				}
+				&:first-child {
+					margin-right: 18px;
+				}
+			}
+		}
+	}
+}
+
+// --------------------------------------------------------------------------------------------------------

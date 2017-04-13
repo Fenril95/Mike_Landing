@@ -1,0 +1,93 @@
+@import url(../styles/vars.less);
+
+.div-heading {
+		text-transform: uppercase;
+		width: 100%;
+	h3 {
+		color: #196fc0;
+		font: 32px @varela;
+		text-align: center;
+	}
+	h4 {
+		color: #666;
+		font: 16px @varela;
+		letter-spacing: 4px;
+		margin-bottom: 84px;
+		text-transform: uppercase;
+		text-align: center;
+		span {
+			color: #666;
+			padding: 0 10px;
+		}
+	}
+}
+
+.rotate-div {transform: rotate(45deg);}
+.rotate-cont {transform: rotate(-45deg);}
+
+.map-sample {
+	align-items: center;
+	border-radius: 10px;
+	border: 2px solid #196fc0;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+	padding: 20px 10px 50px;
+	h3 {
+		color: #000;
+		font: 20px @sBold;
+		text-transform: uppercase;
+	}
+	h4 {
+		color: #196fc0;
+		font:16px @normal;
+		text-transform: uppercase;
+	}
+	p {
+		font: 14px @varela;
+		padding-bottom: 30px;
+		padding-top: 10px;
+	}
+	a {
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		span {
+			background-color: #196fc0;
+			border: 2px solid #196fc0;
+			display: inline-block;
+			height: 66px;
+			line-height: 77px;
+			position: relative;
+			text-align: center;
+			width: 66px;
+			.fa.fa-map-marker {
+				color: #fff;
+				font-size: 35px;
+			}
+		}
+		h5 {
+			background-color: #000;
+			border: 2px solid #000;
+			color: #fff;
+			display: inline-block;
+			font: 12px @varela;
+			left: -98px;
+			padding: 4px;
+			position: absolute;
+			text-transform: uppercase;
+			top: 93px;
+		}
+	}
+}
+
+.clearfix {
+	zoom: 1;
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}

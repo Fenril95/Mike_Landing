@@ -1,0 +1,117 @@
+@import url(../styles/vars.less);
+@import url(../styles/mixins.less);
+
+// -----------------------------------------CLIENTS SECTION------------------------------------------
+#clients {
+	.container-full {
+		padding: 70px 0;
+		text-align: center;
+		h3 {
+			font: 30px @light;
+			margin-bottom: 0;
+			margin-top: 0;
+			text-transform: capitalize;
+		}
+		.clients-line {
+			background-color: #bbb;
+			display: inline-block;
+			height: 1px;
+			margin: 30px 0 50px;
+			width: 50px;
+		}
+		.clients-img {
+			display: flex;
+			flex-wrap: wrap;
+			height: 70px;
+			justify-content: space-around;
+			margin-bottom: 40px;
+			padding: 0 50px;
+			padding: 0;
+			width: 100%;
+			.clients {
+				background-color: #fff;
+				float: left;
+				height: 100%;
+				margin-right: 30px;
+				width: 17%;
+				&:last-child {
+					margin-right: 0;
+				}
+				img {
+					height: 100%;
+					width: 100%;
+				}
+			}
+		}
+		p {
+			font: 13px @light;
+			padding: 0 172px;
+		}
+	}
+}
+
+// ------------------------------------------------------------------------------------------------------
+
+// ----------------------------------------------PARALAX SECTION II---------------------------------------
+#paralax3 {
+	background: #000 url(../img/paralax2.jpeg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	max-width: 100%;
+	.container {
+		color: #fff;
+		max-width: 100%;
+		padding: 107px 0 107px;
+		text-align: center;
+		.tw-diamond {
+			border: 3px solid #fff;
+			display: inline-block;
+			height: 86px;
+			line-height: 94px;
+			width: 86px;
+			.fa.fa-twitter.sd {
+				font-size: 39px;
+			}
+		}
+		h3 {
+			font: 14px @varela;
+			margin-bottom: 0;
+			margin-top: 54px;
+			text-transform: uppercase;
+		}
+		.twitter-line {
+			background-color: #bbb;
+			display: inline-block;
+			height: 1px;
+			margin: 24px 0 40px;
+			width: 40px;
+		}
+		p {
+			font: 15px/24px @light;
+			padding: 0 162px 76px;
+			span {
+				color: #196fc0;
+			}
+		}
+		.btn-blue { 
+			display: inline;
+			a {
+				background-color: none;
+				border: 1px solid #f0f0f0;
+				color: #fff;
+				display: inline-block;
+				font: 13px @varela;
+				padding: 17px 38px;
+				text-decoration: none;
+				text-transform: uppercase;
+				transition: all 0.4s;
+				&:hover {
+					background-color: #185fa3;
+					transition: 0.4s;
+				}
+			}
+		}
+	}
+}
+
+// --------------------------------------------------------------------------------------------------------
